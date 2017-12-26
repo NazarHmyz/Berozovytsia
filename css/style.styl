@@ -1,0 +1,340 @@
+@import "variable.styl"
+
+.wrapper
+  width: wrapper_width
+  margin: 0 auto
+
+/*HEADER*/
+.header
+  height: header_height
+
+.header_top
+  height: header_top_height
+  background-color: header_top_color
+
+.logo
+  margin: 0
+  padding: 0
+
+.logo_img
+  margin 18px 0 10px 8px
+  &:hover
+    margin-bottom: 0
+    width: 165px
+    margin-top: 13px
+
+.nav
+  margin-left: 0
+
+.nav_item
+  margin-top: 34px
+  margin-right: 10px
+  a
+    font nav_text
+    color: nav_text_color
+    &:hover
+      text-decoration: none
+      color: nav_text_color_hover
+      transition all 0.4s
+
+.other_news_text
+  a
+    display: block
+    margin-top: 15px
+    color: #000
+    &:hover
+      text-decoration: none
+      color: #000
+
+.hr_news
+  margin-top: 15px
+  margin-bottom: 0
+  hr
+    border 1px solid #cccccc
+    margin-bottom: 0
+    width: 676px
+
+.fotorama-text
+  font: fotorama_text
+  color: fotorama_text_color
+  position absolute
+  bottom 100px
+  left: 180px
+  width: 625px
+  text-align: center
+  &:hover
+    color: fotorama_text_color_hover
+    text-decoration: none
+    transition 0.4s
+
+.fotorama_btn
+  position absolute
+  bottom: 40px
+  left: 400px
+  width: 180px
+  height: 40px
+  background-color: fotorama_btn_color
+  border none
+  color: fotorama_btn_text_color
+  font: fotorama_btn_text
+  &:hover
+    background-color: fotorama_btn_color_hover
+    border 3px solid #fff
+    transition 0.4s
+
+
+/*CONTENT*/
+
+.news
+  margin-right: 25px
+
+.news_item
+  width: news_width
+  height: news_height
+  border 1px solid black
+  margin-top: 70px
+
+
+.news_img
+  padding-left: 0
+  position absolute
+  left: -15px
+  img:hover
+    width: 250px
+    margin-top: 10px
+    margin-left: 10px
+
+.news_text_header
+  font: news_heder_text
+  color: #000
+  display: block
+  margin-bottom: 25px
+  margin-top: 15px
+  text-align: center
+  &:hover
+    text-decoration: none
+    color: header_top_color
+    transition 0.4s
+
+
+.news_text_p
+  font news_text
+  line-height 30px
+
+.btn_news
+  width: btn_news_width
+  height: btn_news_height
+  background-color: btn_news_color
+  border none
+  color: #fff
+  display: block
+  margin-left: 230px
+  &:hover
+    border 2px solid btn_news_border_color
+    background-color: #fff
+    color: btn_news_text_color
+    transition 0.4s
+
+.btn_n:hover
+  text-decoration: none
+
+.news_item1
+  @extend .news_item
+  margin-top: 50px
+
+
+.pagin
+  margin-left: 290px
+  margin-top: 25px
+
+.pic
+  width: 380px
+
+.news_h
+  margin-top: 45px
+  p
+    font-style italic
+  hr
+    margin-top: 5px
+    border 0.5px solid #cccccc
+
+.time_autor
+  display: inline-block
+  margin: 0
+  margin-top: 20px
+
+.text_news
+  margin-top: 18px
+
+.icon
+  img
+    width: 30px
+    float: left
+    margin-right: 8px
+    margin-top: 20px
+
+.other_news
+  img
+    width: 160px
+    margin-top: 25px
+
+.other_news_img
+  img:hover
+    width: 170px
+    transition 0.2s
+
+
+/*SIDEBAR*/
+
+.sidebar_poster
+  width: sidebar_poster_width
+  height: sidebar_poster_height
+  border 1px solid black
+  margin-top: 70px
+  margin-left: 0
+
+.poster_header
+  font poster_header_text
+  color: #000
+  display: block
+  text-align: center
+  margin-top: 15px
+  margin-bottom: 30px
+  &:hover
+    text-decoration: none
+    color: poster_header_color
+    transition 0.4s
+.poster
+  list-style none
+  margin: 0
+  padding: 0
+  .poster_item
+    margin-bottom: 25px
+    a
+      font poster_text
+      color: #000
+      &:hover
+        text-decoration: none
+        color: poster_text_color
+        transition 0.4s
+
+.advertising
+  width: advertising_width
+  height: advertising_height
+  border 1px solid black
+  background-color: advertising_bg
+  margin-top: 50px
+  .advertising_text
+    text-transform: uppercase
+    color: advertising_text_color
+    font: advertising_text
+    display: block
+    text-align: center
+    margin-top: 180px
+    &:hover
+      text-decoration: none
+
+.facebook
+  @extend .advertising
+  background-color: facebook_bg
+  height: facebook_height
+  .facebook_text
+    font facebook_text
+    color: #000
+    display: block
+    margin-top: 50px
+    text-align: center
+    &:hover
+      text-decoration: none
+
+.facebook_img
+  display: block
+  margin-top: 70px
+
+.facebook_news
+  @extend .facebook
+  margin-top: 70px
+
+.weather
+  margin: 0
+  margin-top: 50px
+  img
+    border 1px solid #000000
+    margin: 0
+    padding: 0
+.weater_img
+  padding: 0
+  right: 15px
+
+/*FOOTER*/
+
+.footer
+  width: footer_width
+
+.footer_b
+  width: footer_width
+  height: footer_height
+  background-color: footer_bg
+  margin-top: 50px
+
+.footer_c
+  position absolute
+
+.map_img
+  position absolute
+  left: 70px
+
+.copyright
+  margin-top 50px
+
+.copyright_item
+  margin-left: 400px
+
+.copyright_img
+  float: left
+  margin-right: 7px
+
+.copyright_text
+  font copyright_text
+  color: copyright_text_color
+
+.footer_b_menu
+  margin-top: 35px
+
+.footer_menu
+  list-style none
+
+.footer_menu_item
+  font footer_menu_text
+  margin-bottom: 25px
+  a
+    color: footer_menu_text_color
+    &:hover
+      text-decoration: none
+      color: footer_menu_text_color_h
+
+.adress
+  position relative
+  left: 120px
+  bottom: 20px
+  h5
+    font adress_text_h
+    color: adress_text_color
+  p
+    font: adress_text
+    color: adress_text_color
+  hr
+    margin: 0
+    margin-bottom: 10px
+    width: hr_width
+
+
+
+
+
+
+
+
+
+
+
